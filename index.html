@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Court Case Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Court Case Form</h1>
+        <form id="caseForm" onsubmit="return validateForm()">
+            <label for="caseNumber">Case Number:</label>
+            <input type="text" id="caseNumber" name="caseNumber" required>
+
+            <label for="caseTitle">Case Title:</label>
+            <input type="text" id="caseTitle" name="caseTitle" required>
+
+            <label for="plaintiffName">Plaintiff's Name:</label>
+            <input type="text" id="plaintiffName" name="plaintiffName" required>
+
+            <label for="defendantName">Defendant's Name:</label>
+            <input type="text" id="defendantName" name="defendantName" required>
+
+            <label for="courtDate">Court Date:</label>
+            <input type="date" id="courtDate" name="courtDate" required>
+
+            <label for="caseDescription">Case Description:</label>
+            <textarea id="caseDescription" name="caseDescription" rows="4" required></textarea>
+
+            <button type="submit">Submit Case</button>
+        </form>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
